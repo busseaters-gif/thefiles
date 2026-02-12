@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untitled</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      flex-direction: column;  
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    input {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="urlInput" placeholder="Enter any fullscreen game into here!">
+  <button onclick="openTab()">Open Link in about:blank</button>
+
+  <script>
+    function openTab() {
+      const url = document.getElementById("urlInput").value;
+
+      if (!url) {
+        alert('Please enter a URL!');
+        return;
+      }
+
+      const newTab = window.open('', '_blank');
+
+      const htmlContent = `
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>about:blank</title>
+            <style>
+              html, body {
+                margin: 0; 
+                height: 100%; 
+                overflow: hidden;
+              }
+              iframe {
+                position: fixed; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+                border: none;
+              }
+            </style>
+          </head>
+          <body>
+            <iframe id="gameFrame" src="${url}" allowfullscreen></iframe>
+          </body>
+        </html>
+      `;
+
+      newTab.document.write(htmlContent);
+      newTab.document.close();
+    }
+  </script>
+</body>
+</html>

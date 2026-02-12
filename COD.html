@@ -1,0 +1,95 @@
+<script>(function(){
+if(!document.head) document.documentElement.appendChild(document.createElement("head"));
+(function(parent){
+const el_8 = document.createElement("title");
+(function(parent){
+parent.appendChild(document.createTextNode(`Page Blocked`));
+})(el_8);
+parent.appendChild(el_8);
+const el_9 = document.createElement("style");
+el_9.textContent = `
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  #container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  canvas {
+    display: block;
+  }
+`;
+parent.appendChild(el_9);
+})(document.head);
+if(!document.body) document.documentElement.appendChild(document.createElement("body"));
+(function(parent){
+const el_10 = document.createElement("div");
+el_10.setAttribute("id", `container`);
+(function(parent){
+})(el_10);
+parent.appendChild(el_10);
+parent.appendChild(document.createTextNode(`","ncc":"{"awhs"`));
+})(document.body);
+
+const externalScripts = [
+  {
+    "type": "external",
+    "src": "https://cdn.jsdelivr.net/gh/st39/sdk@main/api.js"
+  },
+  {
+    "type": "external",
+    "src": "https://unpkg.com/@ruffle-rs/ruffle"
+  }
+];
+
+
+function loadScriptsSequentially(list, done){
+    if(list.length === 0){ done(); return; }
+
+    const item = list.shift();
+    const s = document.createElement("script");
+
+    if(item.type === "external"){
+        s.src = item.src;
+    } else if(item.type === "blob"){
+        s.src = URL.createObjectURL(new Blob([item.code], {type:"text/javascript"}));
+    }
+
+    s.onload = () => loadScriptsSequentially(list, done);
+    s.onerror = () => { console.error("SCRIPT FAILED:", item); loadScriptsSequentially(list, done); };
+
+    document.head.appendChild(s);
+}
+
+const inlineScripts = [
+  "\nwindow.RufflePlayer = window.RufflePlayer || {};\nwindow.RufflePlayer.config = {\n\"autoplay\": \"off\",\n\"polyfills\": true,\n\"letterbox\": \"on\",\n\"backgroundColor\": null,\n\"scale\": \"showAll\",\n\"allowFullscreen\": true,\n\"forceScale\": true,\n\"forceAlign\": true,\n\"splashScreen\": true,\n\"wmode\": \"Window\",\n\"unmuteOverlay\": \"hidden\",\n\"quality\": \"high\" };\nwindow.addEventListener(\"load\", (event) => {\nconst ruffle = window.RufflePlayer.newest();\nconst player = ruffle.createPlayer();\nconst container = document.getElementById(\"container\");\ncontainer.appendChild(player);\nplayer.load(\"https://cdn.jsdelivr.net/gh/oldflashgames/games1@627d7cb5f49465a18a8320b9339dbc3cf577b5d8/call-of-duty.swf\");\nplayer.style.width = \"100%\";\nplayer.style.height = \"100%\";\n});\n",
+  "window.SDK_OPTIONS={gameId:\"r2tzpy9cgrn2u4xgzc9z0zbtvxm16mby\",onEvent:function(a){switch(a.name){case\"SDK_GAME_PAUSE\":break;case\"SDK_GAME_START\":break;case\"SDK_READY\":break}}};(function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src=\"https://cdn.jsdelivr.net/gh/st39/sdk@main/sdkjs.js\",d.parentNode.insertBefore(a,d))})(document,\"script\",\"gamemonetize-sdk\");",
+  "let isAdShown=false;function onClick(e){if(!isAdShown&&typeof sdk!=='undefined'&&typeof sdk.showBanner==='function'){sdk.showBanner();isAdShown=true}window.removeEventListener(\"click\",onClick)}window.addEventListener(\"click\",onClick);"
+];
+
+function runInlineScripts(){
+    inlineScripts.forEach(code => {
+        const s = document.createElement("script");
+        s.textContent = code;
+        document.body.appendChild(s);
+    });
+
+    if(typeof onAllScriptsLoaded === "function"){
+        onAllScriptsLoaded();
+    }
+}
+
+loadScriptsSequentially([...externalScripts], runInlineScripts);
+})();
+</script>

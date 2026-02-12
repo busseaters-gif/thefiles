@@ -1,0 +1,339 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <style>
+    body {
+      background: #20124d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: #ffcc00;
+    }
+    h2 {
+      text-align: center;
+    }
+    .ad-container {
+      display: flex;
+      justify-content: center;
+      margin: 15px 0;
+    }
+    .game-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .game-card {
+      width: 220px;
+      background: #2a1a5e;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    }
+    .game-card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #fff;
+    }
+    .game-card button {
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: 2px solid #4a148c;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .game-card button:hover {
+      background: #4a148c;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      z-index: 1000;
+    }
+    .overlay-content {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: #2a1a5e;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: #fff;
+      width: 90%;
+      height: 85%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      display: flex;
+      flex-direction: column;
+    }
+    .overlay-content h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .overlay-content iframe {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      flex: 1;
+      margin-top: 10px;
+    }
+    .overlay-content .buttons {
+      margin-top: 10px;
+    }
+    .overlay-content button {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: 2px solid #4a148c;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .overlay-content button:hover {
+      background: #4a148c;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .overlay-ad {
+      width: 970px;
+      height: 250px;
+      margin: 0 auto;
+      border: none;
+    }
+    h4 {
+    text-align: center;
+    }
+    
+     
+  </style>
+</head>
+<body>
+  <h4 id="version">Version 2.0</h4>
+  <h4 id="games-added">+25 games</h4>
+
+  <h1>All Unblocked games</h1>
+  <h2>Email 486400@bsd48.org for more games</h2>
+  <h4 id ="info">These games are from G+, but I made them unblockable (using file proxy) and placed them all together. if you dont know,</h4>
+  <h4 id ="info2">file proxys is anything put into a file. it shows a blank screen on lightspeed (unlike about:blank) and teachers dont know it yet, and i think its unblockable</h4>
+  
+  
+  
+
+  
+
+ 
+  <div class="game-list">
+    
+    <div class="game-list">
+      <div class="game-card"><h3>Survival Race</h3><button onclick="showOverlay('Survival Race','https://cdn.jsdelivr.net/gh/netclassroom/felek@main/googlx6.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Retro b</h3><button onclick="showOverlay('Retro b','https://cdn.jsdelivr.net/gh/TheEpicCreator/totallyNotRetroBowlQB@a213b6a64021297ccffc70933a9edaf27d46279d/RetroBowl.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Zlope</h3><button onclick="showOverlay('Zlope','https://cdn.jsdelivr.net/gh/kuzresema/sssssssssssssssssssmmmuuuuuuuuuuuuun@main/1.xml')">PLAY</button></div>
+      <div class="game-card"><h3>BaseBall Br0xs</h3><button onclick="showOverlay('BaseBall Br0xs','https://cdn.jsdelivr.net/gh/familiapablo/clasromom@main/889.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Granny</h3><button onclick="showOverlay('Granny','https://cdn.jsdelivr.net/gh/gru6nny/ohd@main/9nany.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Snow Rider</h3><button onclick="showOverlay('Snow Rider','https://cdn.jsdelivr.net/gh/nihathatpsin/a-b-ce@main/ridersf.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Doblox</h3><button onclick="showOverlay('Doblox','https://cdn.jsdelivr.net/gh/classrooms-1/ohanganamaranes@main/11.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Geometry Vibes</h3><button onclick="showOverlay('Geometry Vibes','https://cdn.jsdelivr.net/gh/bodrumkat/tamam@main/12.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Race: Online City</h3><button onclick="showOverlay('Race: Online City','https://cdn.jsdelivr.net/gh/nihathatpsin/alamm@main/ca5.xml')">PLAY</button></div>
+      <div class="game-card"><h3>Basket BR0S</h3><button onclick="showOverlay('Basket BR0S','https://cdn.jsdelivr.net/gh/classroomusers/brosketbos@main/8okbom.xml')">PLAY</button></div>
+      <div class="game-card"><h3>eaglecraft 1.12</h3><button onclick="showOverlay('Minecraft 1.12','https://cdn.jsdelivr.net/gh/okyesgoogl/mc@main/13.xml')">PLAY</button></div>
+      <div class="game-card"><h3>eaglecraft 1.8.8</h3><button onclick="showOverlay('Minecraft 1.18','https://cdn.jsdelivr.net/gh/mece188/feh@main/mcmc.xml')">PLAY</button></div>
+           
+
+           <div class="game-card"><h3>Ninja Parkour</h3><button onclick="showOverlay('Ninja Parkour','https://cdn.jsdelivr.net/gh/99-classroom/kol@main/ninj.xml')">PLAY</button></div>
+
+           <div class="game-card"><h3>r Archers</h3><button onclick="showOverlay('r Archers','https://cdn.jsdelivr.net/gh/emrsdahclassroom/wx7@main/9arch.xml')">PLAY</button></div>
+
+           <div class="game-card"><h3>G.Dash Wave</h3><button onclick="showOverlay('rG.Dash Wave','https://cdn.jsdelivr.net/gh/99-classroom/kol@main/wwavw.xml')">PLAY</button></div>
+
+           <div class="game-card"><h3>Red vs Blue</h3><button onclick="showOverlay('rRed vs Blue','https://cdn.jsdelivr.net/gh/docs-g-classroommyflies/yes@main/google.com-7.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Click for speed</h3><button onclick="showOverlay('Click speed','https://cdn.jsdelivr.net/gh/papamamia/sers@main/ust.xml')">PLAY</button></div>
+           <div class="game-card"><h3>They are coming</h3><button onclick="showOverlay('They are coming','https://cdn.jsdelivr.net/gh/centerclassroom/mc55@main/arex.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Drift RU</h3><button onclick="showOverlay('Drift RU','https://cdn.jsdelivr.net/gh/centerclassroom/mc55@main/rolex.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Death run</h3><button onclick="showOverlay('Death run','https://cdn.jsdelivr.net/gh/centerclassroom/mc55@main/det.xml')">PLAY</button></div>
+           <div class="game-card"><h3>cheese chompers</h3><button onclick="showOverlay('cheese chompers','https://cdn.jsdelivr.net/gh/classroomusers/notlook@main/1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>GDash 3D</h3><button onclick="showOverlay('geometry dash 3d','https://cdn.jsdelivr.net/gh/schoolflashx/bilbilu@main/3ddash.xml')">PLAY</button></div>
+           <div class="game-card"><h3>steal brainrot</h3><button onclick="showOverlay('steal a brainrot','https://cdn.jsdelivr.net/gh/xana-cmd/dev@9dfeb026d341e213c6a2a9b45a3ecc0b9ff5b287/main/sab.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Glass bridge</h3><button onclick="showOverlay('Glass bridge','https://cdn.jsdelivr.net/gh/classrooms-1/haa@main/99lose.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Call of battle</h3><button onclick="showOverlay('Call of battle','https://cdn.jsdelivr.net/gh/docs-g-classroommyflies/rte@main/googlex.xml')">PLAY</button></div>
+           <div class="game-card"><h3>1v1 lol</h3><button onclick="showOverlay('1v1 lol','https://cdn.jsdelivr.net/gh/block-blast-fastx/8788@main/1v1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Block blast</h3><button onclick="showOverlay('Block blast','https://cdn.jsdelivr.net/gh/ragdoi-archers/ishere@main/block.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Granny 2</h3><button onclick="showOverlay('Granny 2','https://cdn.jsdelivr.net/gh/gru6nny/ohd@main/2gran9.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Fortnite</h3><button onclick="showOverlay('Fortnite','https://cdn.jsdelivr.net/gh/familiapablo/re4gl@main/forxt.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Roof top snipers</h3><button onclick="showOverlay('Rooftop snipers','https://cdn.jsdelivr.net/gh/papamamia/root@main/1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Cluster rush</h3><button onclick="showOverlay('Cluster rush (takes time to load)','https://cdn.jsdelivr.net/gh/classrooms-1/google.com@main/1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>CS 1.6</h3><button onclick="showOverlay('CS 1.6','https://cdn.jsdelivr.net/gh/familiapablo/lopx@main/cs.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Cookie clicker</h3><button onclick="showOverlay('Cookie clicker','https://cdn.jsdelivr.net/gh/cach-ehm/ohhh@main/cok.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Just fall</h3><button onclick="showOverlay('Just fall','https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml')">PLAY</button></div>
+           <div class="game-card"><h3>spacebar clicker</h3><button onclick="showOverlay('spacebar clicker','https://cdn.jsdelivr.net/gh/okyesgoogl/wahwah@main/ss/1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Gunspin</h3><button onclick="showOverlay('Gunspin','https://cdn.jsdelivr.net/gh/gru6nny/ohd@main/qad.xml')">PLAY</button></div>
+           <div class="game-card"><h3>99 nights</h3><button onclick="showOverlay('99 nights','https://cdn.jsdelivr.net/gh/centerclassroom/ola@main/21.xml')">PLAY</button></div>
+           <div class="game-card"><h3>soccer random</h3><button onclick="showOverlay('soccer random','https://cdn.jsdelivr.net/gh/awaiblecomponent/ss65@main/soc.xml')">PLAY</button></div>
+           <div class="game-card"><h3>basket random</h3><button onclick="showOverlay('basket random','https://cdn.jsdelivr.net/gh/ragdoi-archers/ishere@main/basrand.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Bouncy rush</h3><button onclick="showOverlay('Bouncy rush','https://cdn.jsdelivr.net/gh/er-73-xxx-88/volvo@main/Bouncy.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Funny shooter 2</h3><button onclick="showOverlay('Funny shooter 2','https://cdn.jsdelivr.net/gh/er-73-xxx-88/ok@main/funnys.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Hole.io</h3><button onclick="showOverlay('Hole.io','https://cdn.jsdelivr.net/gh/gertdoro/Toolkit@93a27eabbbe5eb626af5b9b7dd0926ac16810a41/Code/Java/hole.xml')">PLAY</button></div>
+           <div class="game-card"><h3>chicken</h3><button onclick="showOverlay('chicken','https://cdn.jsdelivr.net/gh/centerclassroom/salam@main/davdav.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Blob eater</h3><button onclick="showOverlay('blob eater','https://cdn.jsdelivr.net/gh/vergidairesi/46d@main/1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>tall.io</h3><button onclick="showOverlay('Tall.io','https://cdn.jsdelivr.net/gh/schoolflashx/efes@main/1.xml')">PLAY</button></div>
+           <div class="game-card"><h3>Car simulator</h3><button onclick="showOverlay('Car simulator','https://cdn.jsdelivr.net/gh/rammyus/4563@main/1.xml')">PLAY</button></div>
+<div class="game-card"><h3>Among us</h3><button onclick="showOverlay('Among us','https://cdn.jsdelivr.net/gh/gahaden/ags@a17bbae7f756eae92fbe0d28f2812f7f42687c1b/au.xml')">PLAY</button></div>
+<div class="game-card"><h3>lemon clicker</h3><button onclick="showOverlay('Lemon clicker','https://cdn.jsdelivr.net/gh/centerclassroom/salam@main/lemmon.xml')">PLAY</button></div>
+<div class="game-card"><h3>sniper v2</h3><button onclick="showOverlay('sniper v2','https://cdn.jsdelivr.net/gh/sema-ver-sem/ghfx@main/googl.xml')">PLAY</button></div>
+<div class="game-card"><h3>paper io 2</h3><button onclick="showOverlay('paper io 2 ','https://cdn.jsdelivr.net/gh/centerclassroom/mc55@main/paper-io-2.xml')">PLAY</button></div>
+<div class="game-card"><h3>gta mods</h3><button onclick="showOverlay('gta mods','https://cdn.jsdelivr.net/gh/centerclassroom/mc55@main/gtao.xml')">PLAY</button></div>
+<div class="game-card"><h3>Sandbox</h3><button onclick="showOverlay('Sandbox','https://cdn.jsdelivr.net/gh/awaiblecomponent/fmos@main/1.xml')">PLAY</button></div>
+
+
+    </div>
+    
+
+  
+  <div id="overlay" class="overlay" style="display: none;">
+    <div class="overlay-content">
+      <span class="close-btn" onclick="closeOverlay()">✖</span>
+      
+      <h2 id="gameTitle"></h2>
+      <iframe id="gameFrame" srcdoc=""></iframe>
+      <div class="buttons">
+        <button onclick="closeOverlay()">Close</button>
+        <button id="fullscreenBtn">Fullscreen</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const DB_NAME = 'GameCacheDB';
+  const STORE_NAME = 'GameFiles';
+  const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days
+  let currentFile = '';
+
+  function openDB() {
+    return new Promise((resolve, reject) => {
+      const request = indexedDB.open(DB_NAME, 1);
+      request.onupgradeneeded = (event) => {
+        const db = event.target.result;
+        db.createObjectStore(STORE_NAME, { keyPath: 'url' });
+      };
+      request.onsuccess = (event) => resolve(event.target.result);
+      request.onerror = (event) => reject(event.target.error);
+    });
+  }
+
+  async function saveToCache(url, content) {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction(STORE_NAME, 'readwrite');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.put({ url, content, timestamp: Date.now() });
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(new Error('Cache error'));
+    });
+  }
+
+  async function getFileFromCache(url) {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction(STORE_NAME, 'readonly');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.get(url);
+      request.onsuccess = async (event) => {
+        const data = event.target.result;
+        if (data && (Date.now() - data.timestamp) < CACHE_DURATION) {
+          resolve(data.content);
+        } else {
+          try {
+            const response = await fetch(url);
+            const text = await response.text();
+            await saveToCache(url, text);
+            resolve(text);
+          } catch (err) {
+            reject(err);
+          }
+        }
+      };
+      request.onerror = () => reject(new Error('DB error'));
+    });
+  }
+
+  function showOverlay(title, url) {
+    currentFile = url;
+    document.getElementById("overlay").style.display = "block";
+    let gtitle = title
+    document.getElementById("gameTitle").textContent = gtitle
+
+    getFileFromCache(url).then((text) => {
+      const iframe = document.getElementById("gameFrame");
+      iframe.contentDocument.open();
+      iframe.contentDocument.write(text);
+      iframe.contentDocument.close();
+    });
+
+    document.getElementById("fullscreenBtn").onclick = () => {
+      launchFullscreen(url);
+    };
+  }
+
+  function closeOverlay() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("gameFrame").srcdoc = "";
+  }
+
+  function launchFullscreen(url) {
+    
+
+    getFileFromCache(url).then((text) => {
+      const newWindow = window.open("about:blank", "_blank");
+      if (newWindow) {
+        newWindow.document.open();
+        newWindow.document.write(text);
+        newWindow.document.close();
+
+        
+        newWindow.onload = () => {
+          const frames = ['t̶͔̮͑̑u̶̮̠͠ņ̴͔̠̩̀̈́̀̑ḡ̸̪ ̸̰̔͒̕͠t̸̥͇̞̃͜u̴̺͌́̚n̸͚̰̣̄̋̚g̷̖̉͑̍ ̴͇͖̺̹̾̈́t̶̛̕͘͝ͅǔ̸̖̺ň̴̥g̵̯̞̐͛̑̆ ̷̪̠͍̝̇̎s̴̛̞͓̪͝a̷͍̳͐h̴̬̪͙̻̑̀͒͝u̸̹̮̼̩̿̀̚r̵̡͒','b̵̞̦̺͆̓͑ṟ̵̞̭̫͂͝r ̶̧̺̲̪̉̏͒̀b̷̙̱̣͝r̴̙̙̀̅͊r̸̻͌͒̽̚ ̴̛̖̝̭̌̿̎p̴̫̥̺̫̆̉a̶̡͇̺̅͠͝t̵̥͒̌a̵͔̯̩̗̐p̶̛̼͌̈͜͠i̵̲̬̘͒͛̕͠m̸͍̹̹͒̃͊͆','ṱ̶͍̜̟̈́͊͘͠a̷̧̩̓̈́͐l̸̺̏͑͘a̴͙̮͓͖̚l̸̤̞̫̆̒̚ͅa̴͓͕͊ļ̶̝̝̓͋r̵̤̺͕̹̒̀̚͘e̴͖̭̐̑̈́̐o̸̧̫͇͋ ̸̮̩̈́̏̾ţ̸̳̈́͠r̵͚͎̈̇̎̕a̵̢̡̹̲̽̇̆l̵̟̑͂̌a̸͙͂̓l̴͕͉̓̌͆͝a̶̱̦̲͘','ụ̷̢̣̱̐d̵̖̬̝͂̃̏͘i̴̩̘̅͒̐ṋ̴̛̪̮͇̄̑ ̷̡̢͍̀d̴̡̲̏̓ĩ̵̯̉ń̸̬̖̮ ̷̲̯͑̌͌d̸̦̙̭͍͐͛i̵̯̮̝̯̽͌͋̈́n̴̥̞̪͒́̅͑͜ ̷͖͎̈́d̶̺̟̤͌ù̶̧̦̮̰̇̆ń̷̤̐','o̷̧̮͗́̉͜r̶̪̜͉̈́̈c̷̜̘̉a̵͙͑͂̒l̷͍̱͓̱̈́̾͐ȩ̷̢̌̒͐͠ṙ̷̞͙̳͓ó̴̠̻̓̾̃ ̵̙̥̤̺͘͝ó̵͝ͅr̸̖̓̑͗c̸̛̦͑͋̎ä̶͕̯̏̒̋l̶̛̫͐̓͛ă̸͕͆͠','Ĺ̷̨͙̭͎́̚o̸̜̣͛s̷̨̻̄̒ ̵̼͛ţ̷͂̓r̵̮̤̭̫̕̚a̷͎̗̓̉̀͘ͅl̸̥̀̈͝ă̷̦̻̯̻̆̎ĺ̴͙ä̶̡̪́l̵̢̪͝í̶̘̖̥t̴̤̘̾͑̂̚ö̸̻̟̉̐ͅs̸̺͍̃͝͝ͅ','S̷̡͉̍̉͒͘I̸͔̍͗̈X̷̝̕ ̷̭͚͈̓̎̏͝S̴̡̳͎͎̈́̀͝Ȅ̸͍̋̃V̸͚͔̤̑E̶̲͚͒N̸̨̙̘̋͛̍','J̵̪͕̓̈́͗̄Ŏ̶̖̖̎B̴͓̝̖͌̈͑̚ ̴͈̞̋͊̀̇͜J̴̟̦͂̐̍͗ͅỜ̶̬B̴̛͉̝ ̴̖̞̔̚J̸͓̯̽Ȏ̸͚͈̜͊B̷͈͛̄ ̸̢̲̽͛͘Ṣ̴͎̰̦̊A̴̲͚͙͕͛Ĥ̶̳̀Ǘ̶̢̦͙̖Ȓ̵̦̰͓̒','l̷̩̙͆i̸̝̇̂r̸͙̥̤̈̊͆i̴̺͇̊͗́l̶̬̽͌̓͜͝i̸̛̪ ̷̼́͗̚ḽ̸͈͔͎̈̓̋̚ȁ̴̤̆̚r̴̞̺̎ī̷̧̩̓̚l̵̫͍̮̮̿͊̈́͝a̶͇̫͇͔͝'];
+          
+          
+          let i = 0;
+          setInterval(() => {
+            newWindow.document.title = `${frames[i % frames.length]}`;
+            i++;
+          }, 500);
+        };
+      } else {
+        alert('Fullscreen could not be opened.');
+      }
+    }).catch((err) => {
+      console.error('Error:', err);
+      alert('Game could not be loaded.');
+    });
+  }
+</script>
+
+
+
+
+
+</div></body></html>
+
+
+
