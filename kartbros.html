@@ -919,52 +919,6 @@
     }, showDelay);
   })();
 </script>
-<div id="warning" style="
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  max-width: 80%;
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  border-radius: 5px;
-"></div>
-
-<script>
-  var warningBanner = document.querySelector("#warning");
-  var message = "Got game suggestions? Email 486400@bsd48.org";
-  var timeAlive = 10000;
-
-  function showBanner(msg) {
-    function updateBannerVisibility() {
-      warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-    }
-
-    var div = document.createElement('div');
-    div.innerHTML = msg;
-
-    
-    div.style.background = '#FFFF00';
-    div.style.color = 'black';
-    div.style.padding = '10px 20px';
-    div.style.marginBottom = '5px';
-    div.style.borderRadius = '4px';
-
-    warningBanner.appendChild(div);
-
-    setTimeout(function () {
-      warningBanner.removeChild(div);
-      updateBannerVisibility();
-    }, timeAlive);
-
-    updateBannerVisibility();
-  }
-
-  showBanner(message);
-</script>
 
 
 
